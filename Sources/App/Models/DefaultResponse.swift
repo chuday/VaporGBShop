@@ -5,4 +5,10 @@
 //  Created by Mikhail Chudaev on 25.01.2022.
 //
 
-import Foundation
+import Vapor
+
+struct DefaultResponse: Content {
+    var result: Int
+    var successMessage: String?
+    var errorMessage: String?
+}

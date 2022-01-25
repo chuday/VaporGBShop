@@ -7,7 +7,6 @@
 
 import Vapor
 
-// то что нам нужно отдать
 struct RegisterRequest: Content {
     var id_user: Int
     var username: String

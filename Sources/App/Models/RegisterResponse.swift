@@ -7,7 +7,6 @@
 
 import Vapor
 
-// ответ который мы получим будет иметь такой формат
 struct RegisterResponse: Content {
     var result: Int
     var user_message: String?

@@ -22,3 +22,4 @@ class AuthController {
         return req.eventLoop.future(response)
     }
 }
+

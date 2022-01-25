@@ -19,3 +19,4 @@ struct CartContents: Content {
     var productPrice: Int?
     var quantity: Int?
 }
+

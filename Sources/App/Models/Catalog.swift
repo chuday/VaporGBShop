@@ -11,3 +11,4 @@ struct Catalog: Content {
     var pageNumber: Int?
     var categoryId: Int?
 }
+

@@ -12,3 +12,4 @@ struct CreateTodo: Migration {
         return database.schema("todos").delete()
     }
 }
+

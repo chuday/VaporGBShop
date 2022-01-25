@@ -28,3 +28,4 @@ func routes(_ app: Application) throws {
     app.post("getcart", use: cartController.getCart)
     app.post("paycart", use: cartController.payCart)
 }
+

@@ -16,3 +16,4 @@ struct RegisterRequest: Content {
     var credit_card: String
     var bio: String
 }
+

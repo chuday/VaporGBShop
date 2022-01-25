@@ -62,3 +62,4 @@ class UserController {
         return req.eventLoop.future(successResponse)
     }
 }
+

@@ -10,3 +10,4 @@ import Vapor
 struct Good: Content {
     var productId: Int?
 }
+

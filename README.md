@@ -1,2 +1,1 @@
-# as
-# VaporShopGB
+# Vapor Shop GB

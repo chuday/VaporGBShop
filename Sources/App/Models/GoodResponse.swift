@@ -14,3 +14,4 @@ struct GoodResponse: Content {
     let price: Int?
     let description: String?
 }
+

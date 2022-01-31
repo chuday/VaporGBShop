@@ -12,3 +12,4 @@ struct DefaultResponse: Content {
     var successMessage: String?
     var errorMessage: String?
 }
+

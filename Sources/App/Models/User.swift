@@ -18,3 +18,4 @@ struct User: Content {
     let name: String?
     let lastname: String?
 }
+

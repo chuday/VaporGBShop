@@ -12,3 +12,4 @@ struct RegisterResponse: Content {
     var user_message: String?
     var error_message: String?
 }
+

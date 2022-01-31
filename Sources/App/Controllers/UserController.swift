@@ -43,6 +43,16 @@ class UserController {
         return req.eventLoop.future(successResponse)
     }
     
+    func changeUserData(_ req: Request) throws -> EventLoopFuture<DefaultResponse> {
+        guard let body = try? req.content.decode(User.self) else { throw Abort(.badRequest) }
+        
+        guard body.id != nil, body.login != nil, body.password != nil, body.name != nil, body.lastname != nil, body.email != nil else {
+            return req.eventLoop.future(errorIncompleteDataResponse)
+        }
+        
+        return req.eventLoop.future(successResponse)
+    }
+    
     func auth(_ req: Request) throws -> EventLoopFuture<DefaultResponse> {
         guard let body = try? req.content.decode(User.self) else { throw Abort(.badRequest) }
         
@@ -61,4 +71,6 @@ class UserController {
         guard let _ = try? req.content.decode(User.self) else { throw Abort(.badRequest) }
         return req.eventLoop.future(successResponse)
     }
+
 }
+

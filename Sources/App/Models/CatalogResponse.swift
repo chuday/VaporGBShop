@@ -13,3 +13,4 @@ struct CatalogResponse: Content {
     let price: Int?
     let shortDescription: String?
 }
+

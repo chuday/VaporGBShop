@@ -38,5 +38,33 @@ class CartController {
         
         return req.eventLoop.future(response)
     }
+    
+    func addToCart(_ req: Request) throws -> EventLoopFuture<DefaultResponse> {
+        guard let body = try? req.content.decode(Cart.self) else { throw Abort(.badRequest) }
+        
+        print(body)
+        
+        let response = DefaultResponse(
+            result: 1,
+            successMessage: "Товар добавлен в корзину.",
+            errorMessage: nil
+        )
+        
+        return req.eventLoop.future(response)
+    }
+    
+    func deleteFromCart(_ req: Request) throws -> EventLoopFuture<DefaultResponse> {
+        guard let body = try? req.content.decode(Cart.self) else { throw Abort(.badRequest) }
+        
+        print(body)
+        
+        let response = DefaultResponse(
+            result: 1,
+            successMessage: "Товар удален из корзины.",
+            errorMessage: nil
+        )
+        
+        return req.eventLoop.future(response)
+    }
 }
 
